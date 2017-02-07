@@ -7,9 +7,15 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MathTraining.Core", "src\Ma
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MathTraining.Web", "src\MathTraining.Web\MathTraining.Web.xproj", "{93187EDB-2BAD-43CC-92ED-A08362D8A06C}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MathTraining.SQLProject", "MathTraining.SQLProject\MathTraining.SQLProject.sqlproj", "{BE5AE8F5-2E0A-4D4D-8C7B-72D4C4FCEAB5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C45A0A2C-39B0-4708-9D2E-194467A9129B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C45A0A2C-39B0-4708-9D2E-194467A9129B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{44701B96-BF69-4DE7-B347-3BF3F3BD6308}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{495E397E-F165-4BE9-95AF-77215D035755}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentations", "presentations", "{7B421D92-FDCD-4E98-8FB5-283A7C52CB9C}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MathTraining.SQLProject", "database\MathTraining.SQLProject\MathTraining.SQLProject.sqlproj", "{BE5AE8F5-2E0A-4D4D-8C7B-72D4C4FCEAB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,5 +40,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EACD56AC-D033-4D0A-B3BA-5F019F723857} = {44701B96-BF69-4DE7-B347-3BF3F3BD6308}
+		{93187EDB-2BAD-43CC-92ED-A08362D8A06C} = {44701B96-BF69-4DE7-B347-3BF3F3BD6308}
+		{BE5AE8F5-2E0A-4D4D-8C7B-72D4C4FCEAB5} = {495E397E-F165-4BE9-95AF-77215D035755}
 	EndGlobalSection
 EndGlobal
