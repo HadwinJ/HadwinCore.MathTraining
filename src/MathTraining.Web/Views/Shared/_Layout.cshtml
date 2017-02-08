@@ -32,6 +32,7 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Articles" asp-action="Index">数学题</a></li>
                     <li><a asp-area="" asp-controller="Movies" asp-action="Index">Movies</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
@@ -40,10 +41,15 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        <img src="~/images/image20170207.png" class="pull-right" alt="加国数学" />
+    <div class="container body-content" style="margin-top: 10px">
         <div class="row">
-            @RenderBody()
+            <div class="col-md-9">
+                @RenderBody()
+            </div>
+
+            <div class="col-md-3">
+                <img src="~/images/image20170207.png" alt="加国数学" />
+            </div>
         </div>
         <hr />
         <footer>
