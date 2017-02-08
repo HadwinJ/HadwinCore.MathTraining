@@ -76,5 +76,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Snapshots\MathTraining.SQLProject_20170207_15-51-55.dacpac" />
+    <None Include="dbo\Tables\Articles.sql" />
   </ItemGroup>
 </Project>
