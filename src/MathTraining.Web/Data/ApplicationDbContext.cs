@@ -24,5 +24,7 @@ namespace MathTraining.Web.Data
         }
 
         public DbSet<Movie> Movie { get; set; }
+        public DbSet<Article> Articles { get; set; }
+
     }
 }

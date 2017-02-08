@@ -8,9 +8,10 @@ using MathTraining.Web.Data;
 namespace MathTraining.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170208091012_Add-Article")]
+    partial class AddArticle
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1")
@@ -68,26 +69,17 @@ namespace MathTraining.Web.Data.Migrations
             modelBuilder.Entity("MathTraining.Web.Models.Article", b =>
                 {
                     b.Property<Guid>("ArticleId")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("MaxLength", 50);
+                        .ValueGeneratedOnAdd();
 
-                    b.Property<string>("BriefIntroduction")
-                        .IsRequired()
-                        .HasAnnotation("MaxLength", 256);
+                    b.Property<string>("BriefIntroduction");
 
-                    b.Property<string>("ChineseTitle")
-                        .IsRequired()
-                        .HasAnnotation("MaxLength", 50);
+                    b.Property<string>("ChineseTitle");
 
                     b.Property<DateTime>("Created");
 
-                    b.Property<string>("EnglishTitle")
-                        .IsRequired()
-                        .HasAnnotation("MaxLength", 50);
+                    b.Property<string>("EnglishTitle");
 
-                    b.Property<string>("FileNameOfView")
-                        .IsRequired()
-                        .HasAnnotation("MaxLength", 50);
+                    b.Property<string>("FileNameOfView");
 
                     b.HasKey("ArticleId");
 
