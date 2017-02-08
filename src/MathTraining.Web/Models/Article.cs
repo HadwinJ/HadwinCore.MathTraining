@@ -9,7 +9,6 @@ namespace MathTraining.Web.Models
     public class Article
     {
         [Required]
-        [MaxLength(50)]
         public Guid ArticleId { get; set; }
 
         [Required]

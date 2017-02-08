@@ -1,0 +1,59 @@
+@model IEnumerable<MathTraining.Web.Models.Article>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BriefIntroduction)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChineseTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Created)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EnglishTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FileNameOfView)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BriefIntroduction)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChineseTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Created)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnglishTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FileNameOfView)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ArticleId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ArticleId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ArticleId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
