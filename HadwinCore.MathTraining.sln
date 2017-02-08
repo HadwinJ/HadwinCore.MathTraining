@@ -27,6 +27,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "resources", "resources", "{
 		resource\SomeResource.txt = resource\SomeResource.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice20170207A", "presentation\Practice20170207A\Practice20170207A.csproj", "{FF715C65-12CD-4556-A412-3DED1BA20B76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{BE5AE8F5-2E0A-4D4D-8C7B-72D4C4FCEAB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE5AE8F5-2E0A-4D4D-8C7B-72D4C4FCEAB5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BE5AE8F5-2E0A-4D4D-8C7B-72D4C4FCEAB5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FF715C65-12CD-4556-A412-3DED1BA20B76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF715C65-12CD-4556-A412-3DED1BA20B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF715C65-12CD-4556-A412-3DED1BA20B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF715C65-12CD-4556-A412-3DED1BA20B76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +61,6 @@ Global
 		{EACD56AC-D033-4D0A-B3BA-5F019F723857} = {44701B96-BF69-4DE7-B347-3BF3F3BD6308}
 		{93187EDB-2BAD-43CC-92ED-A08362D8A06C} = {44701B96-BF69-4DE7-B347-3BF3F3BD6308}
 		{BE5AE8F5-2E0A-4D4D-8C7B-72D4C4FCEAB5} = {495E397E-F165-4BE9-95AF-77215D035755}
+		{FF715C65-12CD-4556-A412-3DED1BA20B76} = {7B421D92-FDCD-4E98-8FB5-283A7C52CB9C}
 	EndGlobalSection
 EndGlobal
