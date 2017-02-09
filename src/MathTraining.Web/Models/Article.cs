@@ -13,21 +13,26 @@ namespace MathTraining.Web.Models
 
         [Required]
         [MaxLength(50)]
+        [Display(Name ="中文标题")]
         public String ChineseTitle { get; set; }
 
         [Required]
         [MaxLength(50)]
+        [Display(Name = "英文标题")]
         public String EnglishTitle { get; set; }
 
         [Required]
         [MaxLength(50)]
+        [Display(Name = "连接名称")]
         public String FileNameOfView { get; set; }
 
         [Required]
+        [Display(Name = "创建日期")]
         public DateTime Created { get; set; }
 
         [Required]
         [MaxLength(256)]
+        [Display(Name = "简要介绍")]
         public String BriefIntroduction { get; set; }
 
     }

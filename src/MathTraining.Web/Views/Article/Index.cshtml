@@ -1,0 +1,27 @@
+﻿@model IEnumerable<MathTraining.Web.Models.Article>
+
+@{
+    ViewData["Title"] = "解题思路";
+}
+
+@foreach (var item in Model)
+{
+    <div>
+        <h2 class="modal-title">
+            @Html.DisplayFor(modelItem => item.ChineseTitle)
+        </h2>
+        <br />
+        <span>
+            @Html.DisplayFor(modelItem => item.Created)
+        </span>
+        <span>
+            by Hadwin
+        </span>
+        <br />
+        <div>
+            @Html.DisplayFor(modelItem => item.BriefIntroduction)
+        </div>
+        <a asp-action="ContentName" asp-route-id="@item.FileNameOfView">详解</a>
+        <br />
+    </div>
+}
